@@ -7,25 +7,25 @@ const run = function(data){
             return element;
         });
         
-        let minMaxX=[100, 900];
-        let minMaxY=[100, 400];
-        let minMaxLeg=[18, 30];
-        let minMaxAntenna=[15, 63];
-        let minMaxAddome=[12, 40];
-        let minMaxEye=[1,5];
+    let minMaxX = [100, 900];
+    let minMaxY = [100, 400];
+    let minMaxLeg = [18, 30];
+    let minMaxAntenna = [15, 63];
+    let minMaxAddome = [12, 40];
+    let minMaxEye = [1,5];
         
-        let scaleX=d3.scaleLinear()
-            .domain(minMaxX);
-        let scaleY=d3.scaleLinear()
-            .domain(minMaxY);
-        let scaleLeg=d3.scaleLinear()
-            .domain(minMaxLeg);
-        let scaleAntenna=d3.scaleLinear()
-            .domain(minMaxAntenna);
-        let scaleAddome=d3.scaleLinear()
-            .domain(minMaxAddome);
-        let scaleEye=d3.scaleLinear()
-            .domain(minMaxEye);
+    let scaleX = d3.scaleLinear()
+        .domain(minMaxX);
+    let scaleY = d3.scaleLinear()
+        .domain(minMaxY);
+    let scaleLeg = d3.scaleLinear()
+        .domain(minMaxLeg);
+    let scaleAntenna = d3.scaleLinear()
+        .domain(minMaxAntenna);
+    let scaleAddome = d3.scaleLinear()
+        .domain(minMaxAddome);
+    let scaleEye = d3.scaleLinear()
+        .domain(minMaxEye);
 
 
     function pointOnEllipse(d, angle) {
